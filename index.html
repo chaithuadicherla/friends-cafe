@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friend's Cafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Friend's Cafe</div>
+
+        <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#stats">Stats</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="booking.html">Book Table</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Background Video -->
+<div class="video-background">
+    <video autoplay muted loop playsinline>
+        <source src="chaithu.mp4" type="video/mp4">
+    </video>
+</div>
+
+<section class="hero-carousel" id="hero">
+
+    <div class="hero-slide active" style="background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb');">
+        <div class="hero-content">
+            <h1>Welcome to Friend's Cafe</h1>
+            <p>Brewing Friendships, One Cup at a Time.</p>
+        </div>
+    </div>
+
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1521017432531-fbd92d768814');">
+        <div class="hero-content">
+            <h1>Freshly Brewed Coffee</h1>
+            <p>Experience the taste of perfection.</p>
+        </div>
+    </div>
+
+    <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085');">
+        <div class="hero-content">
+            <h1>Delicious Moments</h1>
+            <p>Every dish crafted with passion.</p>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button class="hero-prev">&#10094;</button>
+    <button class="hero-next">&#10095;</button>
+
+</section>
+
+<div class="section-divider"></div>
+
+<section class="stats" id="stats">
+    <div class="stat-box">
+        <i class="fa-solid fa-users stat-icon"></i>
+        <h2 class="counter" data-target="1500">0</h2>
+        <p>Happy Customers</p>
+    </div>
+
+    <div class="stat-box">
+        <i class="fa-solid fa-mug-hot stat-icon"></i>
+        <h2 class="counter" data-target="3200">0</h2>
+        <p>Orders Served</p>
+    </div>
+
+    <div class="stat-box">
+        <i class="fa-solid fa-coffee stat-icon"></i>
+        <h2 class="counter" data-target="5400">0</h2>
+        <p>Coffee Cups Brewed</p>
+    </div>
+
+    <div class="stat-box">
+        <i class="fa-solid fa-star stat-icon"></i>
+        <h2 class="counter" data-target="1200">0</h2>
+        <p>5-Star Reviews</p>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="menu" id="menu">
+    <h2>Our Signature Menu</h2>
+    <div class="menu-container" id="menuContainer"></div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="chef-special" id="chef-special">
+    <div class="chef-container">
+
+        <div class="chef-image">
+            <img src="https://content3.jdmagicbox.com/v2/comp/hyderabad/l7/040pxx40.xx40.161118020616.b3l7/catalogue/pizza-company-hyderabad-pizza-outlets-2hwccxh.jpg" alt="Chef Special Pizza">
+        </div>
+
+        <div class="chef-content">
+            <span class="special-tag">Chef’s Special</span>
+            <h2>Pallav's Signature Pizza</h2>
+            <p>
+                Handcrafted with premium cheese, fresh vegetables, and our
+                secret house sauce, this signature pizza is baked to perfection.
+                A must-try experience at Friend’s Cafe.
+            </p>
+            <a href="details.html?item=Pallav's%20Pizza" class="special-btn">
+                View Details
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="testimonials" id="testimonials">
+    <h2>What Our Customers Say</h2>
+
+    <div class="testimonial-container">
+
+        <div class="testimonial-slide active">
+            <div class="quote">
+                <p>"Best coffee in town! The vibe is amazing."</p>
+            </div>
+
+            <div class="testimonial-footer">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+                <div class="customer-info">
+                    <h4>Arjun R.</h4>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-slide">
+            <div class="quote">
+                <p>"Absolutely love Chaithu's Latte. Highly recommended!"</p>
+            </div>
+
+            <div class="testimonial-footer">
+                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
+                <div class="customer-info">
+                    <h4>Sneha M.</h4>
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonial-slide">
+            <div class="quote">
+                <p>"The pasta and pizza are next level. Great ambience!"</p>
+            </div>
+
+            <div class="testimonial-footer">
+                <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Customer">
+                <div class="customer-info">
+                    <h4>Rahul K.</h4>
+                    <div class="stars">
+                        ★★★★☆
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="testimonial-dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="reviews-section">
+
+    <h2>Leave a Review</h2>
+    <p class="reviews-subtitle">We’d love to hear your experience at Friend's Cafe</p>
+
+    <form id="reviewForm"
+          action="https://formspree.io/f/xjgedlnl"
+          method="POST">
+
+        <input type="text" name="name" placeholder="Your Name" required>
+
+        <!-- Star Rating -->
+        <div class="star-rating">
+            <span data-value="1">★</span>
+            <span data-value="2">★</span>
+            <span data-value="3">★</span>
+            <span data-value="4">★</span>
+            <span data-value="5">★</span>
+        </div>
+
+        <input type="hidden" name="rating" id="ratingValue" required>
+
+        <textarea name="review" placeholder="Write your review..." required></textarea>
+
+        <button type="submit">Submit Review</button>
+    </form>
+
+</section>
+
+<!-- Review Success Modal -->
+<div class="modal-overlay" id="reviewSuccessModal">
+    <div class="modal-content">
+        <h3>Thank you for your review! ⭐</h3>
+        <p>Your feedback means a lot to us.</p>
+    </div>
+</div>
+
+<div class="section-divider"></div>
+
+<section class="location" id="location">
+    <h2>Find Us Here</h2>
+
+    <div class="map-full">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1202.3619417330683!2d78.48191420087649!3d17.390672515631408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99d0e8ec6d87%3A0x1d971c087932c320!2sViswakarma%20Boys%20Hostel!5e0!3m2!1sen!2sin!4v1772385448252!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+
+<div class="section-divider"></div>
+
+<section class="business-info">
+
+    <div class="info-container">
+
+        <div class="info-column">
+            <h3>LOCATION</h3>
+            <p>
+                Viswakarma Boys Hostel<br>
+                Boggulkunta Road<br>
+                Hyderabad, Telangana 500001
+            </p>
+        </div>
+
+        <div class="info-column">
+            <h3>HOURS</h3>
+            <p>
+                Monday – Friday 9:00 am – 10:00 pm<br>
+                Saturday & Sunday 10:00 am – 12:00 am
+            </p>
+        </div>
+
+        <div class="info-column">
+            <h3>CONTACT US</h3>
+            <p>
+                1234567890<br>
+                friendscafe@gmail.com
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="section-divider"></div>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h3>Friend's Cafe</h3>
+            <p>Brewing Friendships, One Cup at a Time.</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Friend's Cafe. All Rights Reserved.
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

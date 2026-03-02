@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery - Friend's Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Friend's Cafe</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="booking.html">Book Table</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="events-section">
+
+    <h2>Upcoming Events</h2>
+    <p class="events-subtitle">Join us for special moments at Friend's Cafe</p>
+
+    <div class="events-container">
+
+        <div class="event-card">
+            <div class="event-date">
+                <span class="day">15</span>
+                <span class="month">JUL</span>
+            </div>
+            <div class="event-details">
+                <h3>Live Music Night</h3>
+                <p>Enjoy soulful acoustic performances with your favorite coffee.</p>
+                <span>🕒 7:00 PM – 10:00 PM</span>
+                <a href="event-reserve.html" class="event-btn">Reserve Seat</a>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <div class="event-date">
+                <span class="day">22</span>
+                <span class="month">JUL</span>
+            </div>
+            <div class="event-details">
+                <h3>Coffee Brewing Workshop</h3>
+                <p>Learn the art of brewing the perfect cup from our expert barista.</p>
+                <span>🕒 4:00 PM – 6:00 PM</span>
+                <a href="event-reserve.html" class="event-btn">Reserve Seat</a>
+            </div>
+        </div>
+
+        <div class="event-card">
+            <div class="event-date">
+                <span class="day">29</span>
+                <span class="month">JUL</span>
+            </div>
+            <div class="event-details">
+                <h3>Weekend Brunch Special</h3>
+                <p>Exclusive brunch menu available only this weekend.</p>
+                <span>🕒 10:00 AM – 2:00 PM</span>
+                <a href="event-reserve.html" class="event-btn">Reserve Seat</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="gallery-page">
+    <h1>Our Cafe Moments</h1>
+    <p>Experience the ambiance of Friend's Cafe</p>
+    <div class="gallery-grid">
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb" alt="">
+        <div class="gallery-overlay">
+            <h4>Cafe Interior</h4>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085" alt="">
+        <div class="gallery-overlay">
+            <h4>Fresh Brewed Coffee</h4>
+        </div>
+    </div>
+
+    <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1559925393-8be0ec4767c8" alt="">
+        <div class="gallery-overlay">
+            <h4>Cozy Seating</h4>
+        </div>
+    </div>
+
+        <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814" alt="">
+        <div class="gallery-overlay">
+            <h4>Cozy Seating</h4>
+        </div>
+    </div>
+
+        <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93" alt="">
+        <div class="gallery-overlay">
+            <h4>Cozy Seating</h4>
+        </div>
+    </div>
+
+        <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4" alt="">
+        <div class="gallery-overlay">
+            <h4>Cozy Seating</h4>
+        </div>
+    </div>
+
+        <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0" alt="">
+        <div class="gallery-overlay">
+            <h4>Cozy Seating</h4>
+        </div>
+    </div>
+
+        <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17" alt="">
+        <div class="gallery-overlay">
+            <h4>Cozy Seating</h4>
+        </div>
+    </div>
+
+</div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <img id="lightbox-img" src="">
+</div>
+<style>
+
+/* EVENTS SECTION */
+.events-section {
+    padding: 120px 8%;
+    text-align: center;
+    background: linear-gradient(180deg, #ffffff, #f6f1ea);
+}
+
+.events-section h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.events-subtitle {
+    margin-bottom: 60px;
+    color: #666;
+}
+
+.events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Event Card */
+.event-card {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    transition: 0.4s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+/* Date Block */
+.event-date {
+    background: #4b2e2e;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    min-width: 80px;
+}
+
+.event-date .day {
+    font-size: 28px;
+    font-weight: bold;
+    display: block;
+}
+
+.event-date .month {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Event Details */
+.event-details {
+    text-align: left;
+    flex: 1;
+}
+
+.event-details h3 {
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.event-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    margin-left: 40px;
+    background: #4b2e2e;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.event-btn:hover {
+    background: #6b3e3e;
+}
+
+@media (max-width: 768px) {
+    .event-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event-details {
+        text-align: center;
+    }
+}
+
+.gallery-page {
+    padding: 140px 8%;
+    text-align: center;
+    min-height: 100vh;
+
+    background: linear-gradient(
+        180deg,
+        #f9f6f1 0%,
+        #f3eee6 40%,
+        #efe8dc 100%
+    );
+}
+
+.gallery-page h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.gallery-page p {
+    margin-bottom: 60px;
+    color: #666;
+}
+
+/* Grid Layout */
+.gallery-grid {
+    column-count: 3;
+    column-gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    margin-bottom: 20px;
+    break-inside: avoid;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    border-radius: 16px;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    opacity: 0;
+    transition: 0.4s ease;
+    border-radius: 16px;
+}
+
+.gallery-overlay h4 {
+    color: white;
+    font-size: 18px;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+/* Fade-in animation */
+.gallery-item {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+.gallery-item:nth-child(1) { animation-delay: 0.1s; }
+.gallery-item:nth-child(2) { animation-delay: 0.2s; }
+.gallery-item:nth-child(3) { animation-delay: 0.3s; }
+.gallery-item:nth-child(4) { animation-delay: 0.4s; }
+.gallery-item:nth-child(5) { animation-delay: 0.5s; }
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 992px) {
+    .gallery-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        column-count: 1;
+    }
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 3000;
+}
+
+.lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}</style>
+<script> // GALLERY LIGHTBOX
+document.addEventListener("DOMContentLoaded", function () {
+
+    const galleryImages = document.querySelectorAll(".gallery-grid img");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".close-lightbox");
+
+    if (galleryImages.length > 0) {
+        galleryImages.forEach(img => {
+            img.addEventListener("click", () => {
+                lightbox.classList.add("active");
+                lightboxImg.src = img.src;
+            });
+        });
+    }
+
+    if (closeBtn) {
+        closeBtn.addEventListener("click", () => {
+            lightbox.classList.remove("active");
+        });
+    }
+
+    if (lightbox) {
+        lightbox.addEventListener("click", (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove("active");
+            }
+        });
+    }
+
+});</script>
+<script src="script.js"></script>
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-brand">
+            <h3>Friend's Cafe</h3>
+            <p>Brewing Friendships, One Cup at a Time.</p>
+        </div>
+
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        © 2026 Friend's Cafe. All Rights Reserved.
+    </div>
+</footer>
+</body>
+</html>

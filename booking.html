@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book a Table - Friend's Cafe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="logo">Friend's Cafe</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="booking-wrapper">
+
+    <div class="booking-left">
+        <div class="booking-left-content">
+            <h1>Reserve Your Table</h1>
+            <p>
+                Experience unforgettable moments at Friend’s Cafe.
+                Book your table in advance and enjoy a delightful time with us.
+            </p>
+        </div>
+    </div>
+
+    <div class="booking-right">
+        <form id="bookingForm" class="booking-form">
+            <h2>Book a Table</h2>
+
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="date" name="date" required>
+            <input type="time" name="time" required>
+            <input type="number" name="guests" placeholder="Number of Guests" required>
+            <textarea name="message" placeholder="Special Request (Optional)"></textarea>
+
+            <button type="submit">Confirm Reservation</button>
+        </form>
+    </div>
+
+</section>
+
+
+<div class="modal-overlay" id="successModal">
+    <div class="modal-content">
+        <h3>Reservation Confirmed! 🎉</h3>
+        <p>Your table has been successfully reserved.</p>
+        <p>Redirecting you to the homepage...</p>
+        <button id="closeModal">Close</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
